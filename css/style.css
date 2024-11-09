@@ -1,8 +1,17 @@
+:root {
+    --first: #141B22;
+    --second: #1E2933;
+    --action: #5AAF8E;
+  }
+
+
 body{
     color: aliceblue;
     font-family: 'Roboto', sans-serif
     
 }
+
+
 
 .btn-nr {
     color:black;
@@ -41,4 +50,8 @@ body{
     z-index: -1;
     /* Ensures the video is behind other content */
     object-fit: cover;
+}
+
+.feature-section {
+    background-color: var(--first);
 }
