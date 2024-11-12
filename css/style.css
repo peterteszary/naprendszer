@@ -2,6 +2,7 @@
     --first: #141B22;
     --second: #1E2933;
     --action: #5AAF8E;
+    --action-hover: #77f3c4;
   }
 
 
@@ -13,7 +14,7 @@ body{
 
 
 
-.btn-nr {
+.btn-solar {
     color:black;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -23,10 +24,17 @@ body{
     text-decoration: none;
     font-weight: 500;
     border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-solar:hover {
+
+    background-color: var(--action-hover);
+
 }
 
 
-.hero-section {
+.hero-section-solar {
     background-image: url('/img/hero-bg.jpg');
     background-repeat: no-repeat;    /* Nem ismétli a képet */
     background-size: cover;    /* Kitölti a teljes területet */
@@ -41,7 +49,7 @@ body{
     row-gap: 8px;
 }
 
-#bg-video {
+#bg-video-solar {
     position: fixed;
     top: 0;
     left: 0;
@@ -52,6 +60,66 @@ body{
     object-fit: cover;
 }
 
-.feature-section {
+.feature-section-solar {
+    
     background-color: var(--first);
+}
+
+.feature-section-img-solar {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.vh-50-solar {
+    height: 50vh;
+  }
+
+.full-section-solar {
+    height: 100vh;
+    background-image: url(/img/bg-2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}  
+
+.full-section-solar h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.full-section-solar p {
+    font-size: 1.5rem;
+}
+
+.btn-outline-solar{
+    color:var(--action);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    border-color: var(--action);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-solar:hover{
+    color:black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: var(--action-hover);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    border-color: var(--action);
 }
