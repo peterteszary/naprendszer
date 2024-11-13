@@ -1,29 +1,32 @@
-:root {
-    --first: #141B22;
-    --second: #1E2933;
-    --action: #5AAF8E;
-    --action-hover: #77f3c4;
-  }
+.bg-base {
+    background-color: var(--base);
+}
 
-
-body{
-    color: aliceblue;
-    font-family: 'Roboto', sans-serif
-    
+.bg-secondary {
+    background-color: var(--secondary);
 }
 
 
+body {
+    background-color: var(--primary);
+    color: var(--light);
+    font-family: 'Roboto', sans-serif
+}
+
+.form-control-solar {
+    border-radius: 25px;
+}
 
 .btn-solar {
-    color:black;
+    color: black;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 24px;
     padding-right: 24px;
-    background-color: #7bdcb5;
+    background-color: var(--action);
     text-decoration: none;
     font-weight: 500;
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     transition: all 0.3s ease-in-out;
 }
 
@@ -35,13 +38,17 @@ body{
 
 
 .hero-section-solar {
-    background-image: url('/img/hero-bg.jpg');
-    background-repeat: no-repeat;    /* Nem ismétli a képet */
-    background-size: cover;    /* Kitölti a teljes területet */
-    background-position: center;     /* Középre igazítja */
+    position: relative;
+    background-repeat: no-repeat;
+    /* Nem ismétli a képet */
+    background-size: cover;
+    /* Kitölti a teljes területet */
+    background-position: center;
+    /* Középre igazítja */
     height: 70vh;
     display: flex;
-    flex-direction: column;     /* Ha függőlegesen szeretnéd az elemeket egymás alá rendezni */
+    flex-direction: column;
+    /* Ha függőlegesen szeretnéd az elemeket egymás alá rendezni */
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -49,30 +56,29 @@ body{
     row-gap: 8px;
 }
 
-#bg-video-solar {
-    position: fixed;
+
+#bg-video {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    /* Ensures the video is behind other content */
     object-fit: cover;
+    z-index: -1;
 }
 
 .feature-section-solar {
-    
-    background-color: var(--first);
+    background-color: var(--primary);
 }
 
 .feature-section-img-solar {
     width: 100%;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
 }
 
 .vh-50-solar {
     height: 50vh;
-  }
+}
 
 .full-section-solar {
     height: 100vh;
@@ -84,9 +90,10 @@ body{
     z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-}  
+}
+
 
 .full-section-solar h2 {
     text-align: center;
@@ -94,11 +101,12 @@ body{
 }
 
 .full-section-solar p {
+    text-align: center;
     font-size: 1.5rem;
 }
 
-.btn-outline-solar{
-    color:var(--action);
+.btn-outline-solar {
+    color: var(--action);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 24px;
@@ -106,13 +114,13 @@ body{
     background-color: transparent;
     text-decoration: none;
     font-weight: 500;
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     border-color: var(--action);
     transition: all 0.3s ease-in-out;
 }
 
-.btn-outline-solar:hover{
-    color:black;
+.btn-outline-solar:hover {
+    color: black;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 24px;
@@ -120,6 +128,29 @@ body{
     background-color: var(--action-hover);
     text-decoration: none;
     font-weight: 500;
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     border-color: var(--action);
+}
+
+.footer-solar {
+    padding: 1em;
+
+}
+
+.quote-section-solar {
+    background-color: var(--primary);
+}
+
+.quote-container-solar {
+
+    background-color: var(--secondary);
+    padding: 3em;
+    margin: 2em;
+    border-radius: var(--border-radius);
+}
+
+.video-section-solar {
+    display: grid;
+    place-items: center;
+    margin-bottom: 3em;
 }
