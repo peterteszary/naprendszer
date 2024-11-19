@@ -13,6 +13,10 @@ body {
     font-family: 'Roboto', sans-serif
 }
 
+img{
+    width: 100%;
+}
+
 .form-control-solar {
     border-radius: 25px;
 }
@@ -153,4 +157,55 @@ body {
     display: grid;
     place-items: center;
     margin-bottom: 3em;
+}
+
+.header-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/feature-section.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-section{
+    padding-top: var(--padding-base);
+    padding-bottom: var(--padding-base);
+}
+
+.content-section {
+    padding-top: var(--padding-base);
+    padding-bottom: var(--padding-base);
+  }
+  
+  @media (min-width: var(--breakpoint)) {
+    .content-section {
+      padding-top: var(--padding-max);
+      padding-bottom: var(--padding-max);
+    }
+  }
+
+.image-section-div{
+    width: 100%;
+    
+}
+
+.image-section-img{
+    border-radius: var(--border-radius);
+    border-color: var(--action);
+    border-width: 2;
+    border-style: solid;
+}
+
+
+.solar-border{
+    border-radius: var(--border-radius);
+    border-color: var(--action);
+    border-width: 2;
+    border-style: solid;
 }
