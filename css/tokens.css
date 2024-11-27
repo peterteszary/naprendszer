@@ -19,3 +19,7 @@
   --breakpoint: 1024px;
 }
 
+:root {
+  --border-style: solid 2px var(--action);
+}
+
