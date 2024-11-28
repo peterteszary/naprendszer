@@ -11,3 +11,15 @@
 :root {
     --border-radius: 2em;
 } 
+
+
+:root {
+  --padding-base: 4rem;
+  --padding-max: 12rem;
+  --breakpoint: 1024px;
+}
+
+:root {
+  --border-style: solid 2px var(--action);
+}
+
