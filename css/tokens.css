@@ -1,16 +1,16 @@
 :root {
-    --primary: #141B22;
-    --secondary: #1E2933;
-    --base: #0F141A;
-    --action: #5AAF8E;
-    --action-hover: #77f3c4;
-    --light: #e0e0e0;
-    --shadow: #666666;
-  }
+  --primary: #141B22;
+  --secondary: #1E2933;
+  --base: #0F141A;
+  --action: #5AAF8E;
+  --action-hover: #77f3c4;
+  --light: #e0e0e0;
+  --shadow: #666666;
+}
 
 :root {
-    --border-radius: 2em;
-} 
+  --border-radius: 2em;
+}
 
 
 :root {
@@ -22,4 +22,3 @@
 :root {
   --border-style: solid 2px var(--action);
 }
-

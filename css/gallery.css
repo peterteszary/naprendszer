@@ -1,20 +1,20 @@
-
 .container h1 {
-	font-family: 'Raleway';
-	font-weight: 900;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-	font-size: 50px;
+  font-family: 'Raleway';
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 50px;
 }
+
 hr {
-	border: 0;
-    height: 3px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .thumbnail {
-	margin-bottom:6px;
-  display:flex;
+  margin-bottom: 6px;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -24,13 +24,26 @@ hr {
   object-fit: cover;
 }
 
-    
+
 .blur {
-    transform: scale(0.9);
-    opacity: 0.6;
-  	-webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
-    filter: blur(2px);
+  transform: scale(0.9);
+  opacity: 0.6;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: var(--primary);
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: .3rem;
+  outline: 0;
 }
